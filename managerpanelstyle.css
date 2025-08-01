@@ -1,0 +1,314 @@
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+.font{
+color:#470962 !important;
+}
+
+.commentbt {
+    background-color: #470962 !important;
+    border-color: #470962 !important;
+    color: white !important;
+    border: 1px solid #470962 !important;
+}
+
+.commentbt:hover {
+    background-color: #6b1b9c !important;
+    border-color: #6b1b9c !important;
+    /* رنگ حاشیه دکمه در حالت هاور */
+    color: white !important;
+    border: 1px solid #6b1b9c !important;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962;
+    /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img {
+    width: inherit;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967;
+    /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+nav .categories-list {
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 60px;
+}
+
+nav .categories-list a:hover {
+    background-color: #470962;
+}
+
+.management-panel {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #412b5a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #470962;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.add-news {
+    background-color: #470962;
+    color: white;
+    margin-bottom: 15px;
+}
+
+button.add-news:hover {
+    background-color: #9b59b6;
+}
+
+button.confirm-news {
+    background-color: #2ecc71;
+    color: white;
+}
+
+button.confirm-news:hover {
+    background-color: #27ae60;
+}
+
+button.edit-news {
+    background-color: #f1c40f;
+    color: black;
+}
+
+button.edit-news:hover {
+    background-color: #d4ac0d;
+}
+
+button.delete-news {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.delete-news:hover {
+    background-color: #c0392b;
+}
+
+button.confirm-user {
+    background-color: #2ecc71;
+    color: white;
+    margin-left: 5px;
+}
+
+button.confirm-user:hover {
+    background-color: #27ae60;
+}
+
+button.change-role {
+    background-color: #9b59b6;
+    color: white;
+}
+
+button.change-role:hover {
+    background-color: #8e44ad;
+}
+
+button.delete-user {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.delete-user:hover {
+    background-color: #c0392b;
+}
+
+.user-management form select {
+    padding: 11px 20px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-management form select:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.nazarat {
+    text-decoration: none;
+    color: white;
+    background-color: #470962;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 25px;
+}
+
+.nazarat:active {
+    color: #9b59b6;
+}
+
+
+/* سایدبار */
+.sidebar {
+    width: 220px;
+    background-color: #5a3967; 
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+/* دکمه‌های سایدبار */
+.sidebar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover, 
+.sidebar button.active {
+    background-color: #470962; /* رنگ هایلایت */
+}
+
+/* محتوای بخش‌های مدیریت */
+.admin-section {
+    display: none; /* ابتدا مخفی */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+/* وقتی نمایش داده میشه */
+.admin-section.active {
+    display: block;
+}
+
+/* تنظیم بخش اصلی صفحه */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 5px;
+        padding: 10px;
+    }
+    .sidebar button {
+        flex: 1;
+        font-size: 16px;
+        padding: 8px 5px;
+    }
+}

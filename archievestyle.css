@@ -1,0 +1,240 @@
+/* افزودن فونت */
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+
+/* هدر */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962;
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img {
+    width: inherit;
+}
+
+header .time-date {
+    font-size: 16px;
+    margin-left: 55px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967; /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+nav .categories-list{
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 60px;
+}
+
+nav .categories-list a:hover {
+    background-color:#470962;
+}
+
+
+nav .login-button button {
+    padding: 8px 28px;
+    margin-left: 28px;
+    background-color: #95a5a6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-weight: 800;
+}
+
+nav .login-button button:hover {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+nav .login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* نمایش تمام اخبار */
+main {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    color: #470962;
+    margin-bottom: 20px;
+}
+
+.all-news {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.news-block {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+}
+
+.news-block img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+     height: 180px;            
+  object-fit: cover;   
+}
+
+.news-info {
+    width: 65%;
+}
+
+.news-info h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.news-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-info button {
+    background-color: #ba48cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news-info button:hover {
+    background-color: #6b1b9c;
+}
+
+/* فوتر */
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #470962;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer .about-us{
+    margin-top: 30px;
+    width: 30%;
+    border-left: 1px dashed #ccc;
+
+}
+
+footer .about-us h3{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 24px;
+}
+
+footer .about-us p{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+footer .contact-us{
+    margin-top: 30px;
+    width: 30%;
+    border-left: 1px dashed #ccc;
+
+}
+
+footer .contact-us h3{
+    text-align: center;
+    margin: 20px 0px 0 30px;
+    font-size: 24px;
+}
+
+footer .contact-us p{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+footer .photo{
+    width: 30%;
+}
+
+footer .photo img{
+    width: 100%;
+}

@@ -1,0 +1,192 @@
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: B-mitra ,sans-serif;
+}
+/* استایل پنل نویسنده */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962; /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img{
+    width: inherit;
+}
+
+header .time-date {
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967; /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+     overflow: hidden;
+}
+
+nav .categories-list{
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+nav .categories-list a:hover {
+    background-color: #470962;
+}
+
+.panel {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #470962;
+}
+
+.panel .button-group button {
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #470962;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.panel .button-group button:hover {
+    background-color: #6b1b9c;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #470962;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* استایل جدول لیست اخبار */
+.news-list {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.news-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #470962;
+    text-align: center;
+}
+
+.news-list table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.news-list th, .news-list td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-list th {
+    background-color: #5a3967;
+}
+
+.news-list .approved {
+    color: green;
+    font-weight: bold;
+}
+
+.news-list .pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.news-list .rejected {
+    color: red;
+    font-weight: bold;
+}
+
+/* دکمه‌های ویرایش و حذف */
+.news-list button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.news-list button:hover {
+    opacity: 0.8;
+}
+
+.news-list button:first-child {
+    background-color: #3498db;
+    color: white;
+}
+
+.news-list button:last-child {
+    background-color: #ba48cb;
+    color: white;
+}
+

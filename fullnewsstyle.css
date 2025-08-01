@@ -1,0 +1,166 @@
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962; /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img{
+    width: inherit;
+}
+
+header .time-date {
+    font-size: 16px;
+    margin-left: 55px;
+}
+
+/* نوار منو */
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967; /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+     overflow: hidden;
+}
+
+nav .categories-list{
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 60px;
+}
+
+nav .categories-list a:hover {
+    background-color: #470962;
+    overflow: hidden;
+}
+
+
+nav .login-button button {
+    padding: 8px 28px;
+    margin-left: 28px;
+    background-color: #95a5a6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-weight: 800;
+}
+
+nav .login-button button:hover {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+nav .login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.full-news {
+    width: 80%;
+    margin: 70px  auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.news-details img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.news-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.news-details p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.news-details button {
+    background-color: #ba48cb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news-details button:hover {
+    background-color: #c1685e;
+}
+.commentbt {
+  background-color: #470962 !important; 
+  border-color: #470962 !important;
+  color: white !important; 
+  border: 1px solid #470962 !important; 
+}
+
+.commentbt:hover {
+  background-color: #6b1b9c !important; 
+  border-color: #6b1b9c !important; /* رنگ حاشیه دکمه در حالت هاور */
+  color: white !important; 
+  border: 1px solid #6b1b9c !important; 
+}

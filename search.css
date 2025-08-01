@@ -1,0 +1,11 @@
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+.natayej{
+      color:#470962;
+}
+.show{
+      color: black;
+      text-decoration: none;
+}

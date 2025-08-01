@@ -1,0 +1,440 @@
+/*افزودن فونت*/
+
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+
+/* تنظیمات کلی */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+    /* رنگ پس‌زمینه */
+}
+
+
+/* هدر */
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962;
+    /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img {
+    width: inherit;
+}
+
+header .time-date {
+    font-size: 16px;
+    margin-left: 55px;
+}
+
+
+/* نوار منو */
+
+
+/* استایل کلی منوبار */
+
+.menubar {
+    background-color: #333;
+    /* رنگ پس زمینه منوبار */
+    height: 60px;
+    /* ارتفاع منوبار */
+    display: flex;
+    /* استفاده از flexbox برای چیدمان عناصر */
+    align-items: center;
+    /* تراز عمودی عناصر */
+    padding: 0 20px;
+    /* فاصله داخلی */
+}
+
+
+/* استایل فرم جستجو */
+
+form {
+    display: flex;
+    /* استفاده از flexbox برای چیدمان عناصر */
+    align-items: center;
+    /* تراز عمودی عناصر */
+    margin: 0;
+    /* حذف حاشیه پیش فرض فرم */
+}
+
+
+/* استایل برچسب ها */
+
+label {
+    color: #fff;
+    /* رنگ فونت */
+    margin-right: 10px;
+    /* فاصله بین برچسب و ورودی */
+    font-size: 14px;
+    /* اندازه فونت */
+}
+
+
+/* استایل ورودی ها */
+
+input[type="text"],
+input[type="date"] {
+    padding: 8px;
+    /* فاصله داخلی ورودی ها */
+    border: none;
+    /* حذف حاشیه ورودی ها */
+    border-radius: 4px;
+    /* گرد کردن گوشه های ورودی ها */
+    margin-right: 10px;
+    /* فاصله بین ورودی ها */
+    font-size: 14px;
+    /* اندازه فونت */
+    height: 30px;
+    /* ارتفاع ورودی ها */
+}
+
+
+/* استایل دکمه */
+
+button {
+    background-color: #95a5a6;
+    /* رنگ پس زمینه دکمه */
+    color: white;
+    /* رنگ متن دکمه */
+    padding: 6px 20px 6px 20px;
+    /* فاصله داخلی دکمه */
+    border: none;
+    /* حذف حاشیه دکمه */
+    border-radius: 4px;
+    /* گرد کردن گوشه های دکمه */
+    cursor: pointer;
+    /* تغییر شکل نشانگر موس */
+    font-size: 14px;
+    /* اندازه فونت */
+    height: 30px;
+    /* ارتفاع دکمه */
+}
+
+.search {
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #7f8c8d;
+    /* تغییر رنگ پس زمینه دکمه در حالت هاور */
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967;
+    /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+nav .categories-list {
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 60px;
+}
+
+nav .categories-list a:hover {
+    background-color: #470962;
+}
+
+nav .login-button button {
+    padding: 6px 28px 6px 28px;
+    margin-left: 28px;
+    background-color: #95a5a6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-weight: 800;
+}
+
+nav .login-button button:hover {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+nav .login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* بخش اخبار */
+
+.commentbt {
+    background-color: #470962 !important;
+    border-color: #470962 !important;
+    color: white !important;
+    border: 1px solid #470962 !important;
+}
+
+.commentbt:hover {
+    background-color: #6b1b9c !important;
+    border-color: #6b1b9c !important;
+    /* رنگ حاشیه دکمه در حالت هاور */
+    color: white !important;
+    border: 1px solid #6b1b9c !important;
+}
+
+.comments-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.comment-form button[type="submit"] {
+    background-color: #95a5a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comment-form button[type="submit"]:hover {
+    background-color: #7f8c8d;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news {
+    width: calc(100%-30px);
+    margin: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.news .political,
+.news .sports,
+.news .cultural {
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.newsblock {
+    width: 22%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 0 10px;
+    min-height: fit-content;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsblock:hover {
+    transform: scale(1.03);
+}
+
+.newsblock .news-information {
+    margin-bottom: 15px;
+}
+
+.news-information img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.newsblock .news-information h3 {
+    text-align: center;
+    margin: 10px;
+    color: #333333;
+}
+
+.newsblock .news-information p {
+    margin: 0 10px;
+    color: #555;
+}
+
+.newsblock .show-news button {
+    width: 100%;
+    padding: 6px 28px 6px 28px;
+    background-color: #ba48cb;
+    /* رنگ ثانویه */
+    color: white;
+    border: none;
+    border-radius: 0 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsblock .show-news button:hover {
+    background-color: #6b1b9c;
+}
+
+.newsblock a {
+    text-decoration: none;
+    color: white;
+}
+
+.show-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-all button {
+    padding: 15px 35px;
+    background-color: #ba48cb;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 6px 28px 6px 28px;
+}
+
+.show-all button:hover {
+    background-color: #6b1b9c;
+}
+
+
+/* فوتر */
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #470962;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer .about-us {
+    margin-top: 30px;
+    width: 30%;
+    border-left: 1px dashed #ccc;
+}
+
+footer .about-us h3 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 24px;
+}
+
+footer .about-us p {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+footer .contact-us {
+    margin-top: 30px;
+    width: 30%;
+    border-left: 1px dashed #ccc;
+}
+
+footer .contact-us h3 {
+    text-align: center;
+    margin: 20px 0px 0 30px;
+    font-size: 24px;
+}
+
+footer .contact-us p {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+footer .photo {
+    width: 30%;
+}
+
+footer .photo img {
+    width: 100%;
+}

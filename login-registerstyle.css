@@ -1,0 +1,179 @@
+/* استایل کلی */
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1; /* رنگ پس‌زمینه */
+}
+
+/* هدر */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962; /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .newsagency-information {
+    display: flex;
+    align-items: center;
+}
+
+header .newsagency-information .name {
+    margin-right: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .newsagency-information .logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+header .newsagency-information .logo img {
+    width: inherit;
+}
+
+header .time-date {
+    font-size: 18px;
+    margin-left: 55px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #5a3967; /* رنگ هایلایت */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+     overflow: hidden;
+}
+
+nav .categories-list{
+    margin-right: 150px;
+}
+
+nav .categories-list a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 60px;
+}
+
+nav .categories-list a:hover {
+    background-color: #470962;
+}
+
+/* فرم‌های ورود و ثبت‌نام */
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-form, .register-form {
+    width: 350px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4d3068;
+}
+
+label {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #555;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #4d3068; /* رنگ هایلایت هنگام فوکوس */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #470962; /* رنگ هایلایت */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4d3068; /* رنگ ثانویه برای هاور */
+}
+
+.guide {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link-guide {
+    color: #470962;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #4d3068;
+}
+
+/* پنهان کردن فرم‌ها */
+.register-form {
+    display: none;
+}
+
+.message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}

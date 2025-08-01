@@ -1,0 +1,137 @@
+@font-face {
+    font-family: B-Mitra;
+    src: url(./fonts/B-Mitra/B\ Mitra_0.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: B-mitra, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1; /* رنگ پس‌زمینه */
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #470962; /* رنگ اصلی */
+    color: white;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main{
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    margin: 80px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main .news-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 0;
+}
+
+main .news-form-container h3{
+    font-size: 22px;
+}
+
+main .news-form-container .news-form{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color:  whitesmoke;
+    text-align: right;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+main .news-form-container .news-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .news-form-container .news-form form label{
+    padding: 20px 5px 15px;
+    font-size: 19px;
+}
+
+main .news-form form input{
+    padding: 15px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+main .news-form form input:focus{
+    border-color: #470962;
+    outline: none;
+}
+
+main .news-form form textarea{
+    padding: 15px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+}
+
+main .news-form form textarea:focus{
+    border-color: #470962;
+    outline: none;
+}
+
+main .news-form form select{
+    padding: 15px 10px;
+    margin-bottom: 25px;
+    width: fit-content;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+main .news-form form select:focus {
+    border-color: #470962;
+    outline: none;
+}
+
+main .news-form form select option{
+    font-size: 18px;
+}
+
+main .news-form form button {
+    padding: 15px 10px;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    background-color: #470962;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .news-form form button:hover {
+    background-color: #4d3068; /* رنگ ثانویه برای هاور */
+}
